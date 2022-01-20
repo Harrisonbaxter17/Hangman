@@ -38,9 +38,18 @@ namespace Hangman
             g.DrawLine(p, new Point(130, 218), new Point(130, 5));
             g.DrawLine(p, new Point(135, 5), new Point(65, 5));
             g.DrawLine(p, new Point(60, 0), new Point(60, 5));
-
+            DrawBodyPart(BodyParts.Head);
+            DrawBodyPart(BodyParts.Left_Eye);
         }
-            
+        
+        void DrawBodyPart(BodyParts bp)
+        {
+            Graphics g = panel1.CreateGraphics();
+            Pen p = new Pen(Color.Blue, 2);
+            if (bp == BodyParts.Head)
+                g.DrawEllipse(p, 40, 50, 40, 40);
+            else if (bp == BodyParts.Left_Eye)
+        }
         
         
          
