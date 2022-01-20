@@ -17,7 +17,51 @@ namespace Hangman
             InitializeComponent();
         }
 
+        
+        enum BodyParts
+        // this stores the different body parts used for the hangman character.
+        {
+            Head,
+            Left_Eye,
+            Right_Eye,
+            Mouth,
+            Right_Arm,
+            Left_Arm,
+            Body,
+            Right_Leg,
+            Left_Leg
+        }
+        void DrawHangPost()
+        {
+            Graphics g = panel1.CreateGraphics();
+            Pen p = new Pen(Color.Brown, 10);
+            g.DrawLine(p, new Point(130, 218), new Point(130, 5));
+            g.DrawLine(p, new Point(135, 5), new Point(65, 5));
+            g.DrawLine(p, new Point(60, 0), new Point(60, 5));
+
+        }
+            
+        
+        
+         
+        
+
+
+
+
+
+
+
+
+
+
+
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
         {
 
         }
